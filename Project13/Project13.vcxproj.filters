@@ -24,12 +24,18 @@
     <ClCompile Include="WorkWithText.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AnaliseText.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="WorkWithFile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="WorkWithText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AnaliseText.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,11 +1,23 @@
 #include "WorkWithText.h"
 
-string WorkWithText::toLower(const string& lower)
+wstring WorkWithText::toWide(const string& value)
 {
-	string result = lower;
-	for (char& ch : result)
-	{
-		ch = tolower((unsigned char)ch);
-	}
-	return result;
+	wstring_convert<codecvt_utf8<wchar_t>> conv;
+	return conv.from_bytes(value);
 }
+string WorkWithText::toUTF8(const wstring& value)
+{
+	wstring_convert<codecvt_utf8<wchar_t>> conv;
+	return conv.to_bytes(value);
+}
+
+wstring WorkWithText::toLower(wstring value)
+{
+	for (auto& ch : value)
+	{
+		ch = tolower(ch);
+	}
+	return value;
+}
+
+

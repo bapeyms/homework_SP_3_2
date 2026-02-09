@@ -127,11 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AnaliseText.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="WorkWithFile.cpp" />
     <ClCompile Include="WorkWithText.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AnaliseText.h" />
     <ClInclude Include="WorkWithFile.h" />
     <ClInclude Include="WorkWithText.h" />
   </ItemGroup>

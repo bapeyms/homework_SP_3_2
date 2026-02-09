@@ -8,6 +8,6 @@ using namespace std;
 class WorkWithFile
 {
 public:
-	static vector<string> readFile(const string& filename);
+	vector<string> readFile(const string& filename);
 };
 
